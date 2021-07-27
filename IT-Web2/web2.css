@@ -1,0 +1,79 @@
+header{
+    width:100%;
+    height: 40px;
+    color:white;
+    background: rgb(137, 42, 206);
+    margin-top: -9px;
+    margin-left: -1%;
+}
+.wb{
+    margin-left: 3%;
+    margin-top: 0%;
+}
+body{
+    width:100%;
+    background-color:rgb(241, 224, 253);
+}
+.container{
+    width:100%;
+}
+.div{
+    width: 65%;
+    height: 180px;
+    display:flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: 3px solid rgb(168, 117, 204);
+    background-color: white;
+    border-radius: 20px;
+}
+.image{
+    width: 170px;
+    height: 170px;
+    margin-right: 2%;
+    margin-top: -1%;
+    border-radius: 20px;
+}
+.block{
+    width:60%;
+    height: 150px;
+    display:flex;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.txt{
+    margin-top: -10px;
+    margin-left: 5%;
+}
+
+
+.up{
+    width: 80px;
+    height: 80px;
+   margin-top: 5%; 
+   border-radius: 50px;
+   background: rgb(168, 117, 204);
+}
+.down{
+    width: 80px;
+    height: 80px;
+   margin-top: 5%; 
+   border-radius: 50px;
+   background: rgb(168, 117, 204);
+}
+
+.delete{
+    width: 100px;
+    height: 100px;
+    margin-top: -2%;
+    margin-left: -8%;
+}
+.buttondel{
+    width: 100px;
+    height: 100px;
+    margin-top:30%;
+    margin-left: 80%;
+    border: none;
+    color:white;
+    background-color: white;
+}

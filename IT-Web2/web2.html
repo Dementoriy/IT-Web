@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="web2.css">
+    <!--подключаем CSS-->
+    <title>WEB2</title>
+    <script src="/web.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="wb">Wildberries</h1>
+    </header>
+    <div class="container">
+        <div class="div" id="id1">
+            <div class="block">
+                <img src="./img/k1iJ4txBI2Qmdak.jpg" alt="packet" class="image">
+                <div class="txt">
+                    <h2>Пакет из пятерочки<p>Цена: 999 ₽<p>Количество: 200 шт.</h2>
+                </div>
+            </div>
+            <button class="up">▲</button>
+            <pre>  </pre>
+            <button class="down">▼</button>
+            <div>
+                <button onclick="del1()" id="del1" class="buttondel">
+                    <img src="./img/delete.jpg" alt="delete" class="delete"> 
+                </button>
+                <script src="web.js"></script>
+            </div>
+        </div>
+        <div class="div" id="id2">
+            <div class="block">
+                <img src="./img/18.jpg" alt="vaz2107" class="image">
+                <div class="txt">
+                    <h2>ВАЗ-2107<p>Цена: 30000 ₽<p>Количество: 1 шт.</h2>
+                </div>
+            </div>
+            <button class="up">▲</button>
+            <pre>  </pre>
+            <button class="down">▼</button>
+            <div>
+                <button onclick="del2()" id="del2" class="buttondel">
+                    <img src="./img/delete.jpg" alt="delete" class="delete"> 
+                </button>
+                <script src="web.js"></script>
+            </div>
+        </div>
+        <div class="div" id="id3">
+            <div class="block">
+                <img src="./img/39dfbf1151ac4350437b5a90ded28ab4.jpg" alt="doshik" class="image">
+                <div class="txt">
+                    <h2>Доширак<p>Цена: 3 ¥<p>Количество: 1 шт.</h2>
+                </div>
+            </div>
+            <button class="up">▲</button>
+            <pre>  </pre>
+            <button class="down">▼</button>
+            <div>
+                <button onclick="del3()" id="del3" class="buttondel">
+                    <img src="./img/delete.jpg" alt="delete" class="delete"> 
+                </button>
+                <script src="web.js"></script>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+document.onreadystatechange = () => {
+if (document.readyState == "interactive") {
+
+function insertAfter(newNode, existingNode) {
+existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}
+
+function insertBefore(newNode, existingNode) {
+existingNode.parentNode.insertBefore(newNode, existingNode);
+}
+
+function moveUp(node) {
+if (node.previousElementSibling == null) return;
+
+insertBefore(node, node.previousElementSibling);
+}
+
+function moveDown(node) {
+if (node.nextElementSibling == null) return;
+
+insertAfter(node, node.nextElementSibling);
+}
+
+var onButtonClick = (event) => {
+console.log(event);
+if(event.target.classList.contains('up')) {
+moveUp(event.target.parentElement);
+}
+if(event.target.classList.contains('down')) {
+moveDown(event.target.parentElement);
+}
+}
+document.addEventListener('click', onButtonClick, { once: false });
+}
+}
+</script>
+</body>
+</html>
